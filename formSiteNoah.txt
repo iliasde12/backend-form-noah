@@ -1,0 +1,21 @@
+data:
+voornaam,
+achternaam,
+email,
+telefoonnummer(optioneel),
+leeftijd,
+lengte,
+gewicht,
+blessures of medische klachten,
+wat doe je van beroep,
+strugel,
+aantaal keer train je per week,
+aanpak voeding,
+hoe vaak uiteten,
+huidige doelen,
+hoe belangrijk zijn de deoelen,
+actie ondernmen(bereid om te betalen),
+klaar om coaching nu te starte,
+
+redirect naar calender 
+en save alle data;   
