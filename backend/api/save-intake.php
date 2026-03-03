@@ -7,7 +7,7 @@ $mailer = new Mailer();
 
 // Error reporting (uitzetten in productie)
 //ini_set('display_errors', 1);
-//error_reporting(E_ALL);
+//error_reporting(E_ALL);telefoon
 
 // Headers
 header('Content-Type: application/json; charset=utf-8');
@@ -67,6 +67,7 @@ function validateIntakeData($data): array
         'voornaam' => 'Voornaam',
         'achternaam' => 'Achternaam',
         'email' => 'Email',
+        'telefoon'=> 'telefoon',
         'leeftijd' => 'Leeftijd',
         'lengte' => 'Lengte',
         'gewicht' => 'Gewicht',
@@ -93,7 +94,7 @@ function validateIntakeData($data): array
         $errors[] = 'Ongeldig email adres';
     }
 
-    // Telefoonnummer (optioneel, maar als ingevuld moet het valide zijn)
+    // Telefoonnummer  maar als ingevuld moet het valide zijn
     if (!empty($data['telefoon']) && !preg_match('/^[\d\s\+\-\(\)]+$/', $data['telefoon'])) {
         $errors[] = 'Ongeldig telefoonnummer';
     }
